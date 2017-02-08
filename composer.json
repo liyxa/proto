@@ -28,16 +28,16 @@
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-install-cmd": [
-            "$_ artisan optimize"
+            "php artisan optimize"
         ],
         "pre-update-cmd": [
-            "$_ artisan clear-compiled"
+            "php artisan clear-compiled"
         ],
         "post-update-cmd": [
-            "$_ artisan optimize"
+            "php artisan optimize"
         ],
         "post-create-project-cmd": [
-            "$_ artisan key:generate"
+            "php artisan key:generate"
         ]
     },
     "config": {
